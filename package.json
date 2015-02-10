@@ -17,5 +17,15 @@
   "bugs": {
     "url": "https://github.com/huston007/components-example/issues"
   },
-  "homepage": "https://github.com/huston007/components-example"
+  "homepage": "https://github.com/huston007/components-example",
+  "dependencies": {
+    "autoprefixer-loader": "1.0.0",
+    "sass-loader": "0.3.1",
+    "style-loader": "0.8.2",
+    "url-loader": "0.5.5",
+    "jsx-loader": "0.11.2"
+  },
+  "devDependencies": {
+    "webpack": "^1.5.3"
+  }
 }
