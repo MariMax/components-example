@@ -1,0 +1,21 @@
+{
+  "name": "components-example",
+  "version": "0.0.1",
+  "description": "An example library of reusable components",
+  "scripts": {
+    "test": "node ./node_modules/karma/bin/karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huston007/components-example.git"
+  },
+  "keywords": [
+    "example"
+  ],
+  "author": "Andrey Skladchikov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huston007/components-example/issues"
+  },
+  "homepage": "https://github.com/huston007/components-example"
+}

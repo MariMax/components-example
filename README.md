@@ -1,2 +1,2 @@
 # components-example
-An example lib of reusable components
+An example library of reusable components
