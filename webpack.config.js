@@ -4,9 +4,7 @@ var path = require('path');
 module.exports = {
     resolve: {
         extensions: ['', '.js', '.jsx'],
-        fallback: [
-            path.join(__dirname, 'blocks')
-        ]
+        fallback: [ path.join(__dirname, 'blocks') ]
     },
     resolveLoader: {
         fallback: path.join(__dirname, 'node_modules')
@@ -30,11 +28,7 @@ module.exports = {
             //load as data-urls
             { test: /\.png$/, loader: 'url-loader?limit=20000' },
             { test: /\.gif$/, loader: 'url-loader?limit=20000' },
-            { test: /\.woff$/, loader: 'url-loader?limit=20000&minetype=application/font-woff' },
-            { test: /\.svg$/, loader: 'url-loader?limit=20000' },
-            //load as files
-            { test: /\.ttf$/, loader: 'file-loader' },
-            { test: /\.eot$/, loader: 'file-loader' }
+            { test: /\.woff$/, loader: 'url-loader?limit=20000&minetype=application/font-woff' }
         ]
     }
 };
