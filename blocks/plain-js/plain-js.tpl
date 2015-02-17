@@ -1,3 +1,3 @@
 <div class="awesome">
-    This is awesome component template
+    This is plain-js component template
 </div>
