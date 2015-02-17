@@ -26,7 +26,7 @@ module.exports = {
                 test: /\.jsx$/,
                 loader: 'jsx-loader'
             },
-            { test: /\.html$/, loader: 'html-loader' },
+            { test: /\.tpl/, loader: 'html-loader' },
             //load as data-urls
             { test: /\.png$/, loader: 'url-loader?limit=20000' },
             { test: /\.gif$/, loader: 'url-loader?limit=20000' },
