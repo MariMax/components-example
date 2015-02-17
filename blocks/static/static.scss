@@ -1,0 +1,9 @@
+
+@font-face {
+  font-family: StaticFont;
+  src: url('./static__font.woff') format('woff');
+}
+
+.static__image {
+  background-image: 'static__image.png';
+}
