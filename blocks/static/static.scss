@@ -1,9 +1,12 @@
 
 @font-face {
   font-family: StaticFont;
-  src: url('./static__font.woff') format('woff');
+  src: url("./static__font.woff") format("woff");
 }
 
 .static__image {
-  background-image: 'static__image.png';
+  width: 100%;
+  height: 100px;
+  background: url("./static__image.png") center no-repeat;
+  background-size: contain;
 }
