@@ -2,6 +2,13 @@
 var path = require('path');
 
 module.exports = {
+    entry: './index.js',
+    output: {
+        path: './dist',
+        filename: '[name].js',
+        library: '[name]',
+        libraryTarget: 'umd'
+    },
     resolve: {
         extensions: ['', '.js', '.jsx'],
         fallback: [ path.join(__dirname, 'blocks') ]
@@ -12,6 +19,10 @@ module.exports = {
     module: {
         loaders: [
             {
+                test: /\.jsx$/,
+                loader: 'jsx-loader'
+            },
+            {
                 test: /\.scss$/,
                 loaders: [
                     'style',
@@ -19,10 +30,6 @@ module.exports = {
                     'autoprefixer?browsers=last 2 versions',
                     'sass'
                 ]
-            },
-            {
-                test: /\.jsx$/,
-                loader: 'jsx-loader'
             },
             { test: /\.tpl/, loader: 'html-loader' },
             //load as data-urls
