@@ -1,10 +1,10 @@
 require('./plain-js.scss');
 
 /**
- * @name Plain-js
+ * @name Plainjs
  * @description Just example plain js component
  * @example
- <example name="Plain-js">
+ <example name="Plainjs">
      <file name="index.html">
          <div id="plainJsContainer"></div>
      </file>

@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "An example library of reusable components",
   "scripts": {
-    "doc": "node generate-documentation.js",
+    "docs": "node generate-documentation.js",
     "test": "node ./node_modules/karma/bin/karma start"
   },
   "repository": {
