@@ -1,4 +1,4 @@
-require('./plain-js.scss');
+require('./plain-js.css');
 
 /**
  * @name Plainjs

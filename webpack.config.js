@@ -16,12 +16,11 @@ module.exports = {
                 loader: 'jsx-loader'
             },
             {
-                test: /\.scss$/,
+                test: /\.css$/,
                 loaders: [
                     'style',
                     'css',
-                    'autoprefixer?browsers=last 2 versions',
-                    'sass'
+                    'autoprefixer?browsers=last 2 versions'
                 ]
             },
             { test: /\.tpl/, loader: 'html-loader' },

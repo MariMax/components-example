@@ -1,1 +1,1 @@
-require('./static.scss');
+require('./static.css');

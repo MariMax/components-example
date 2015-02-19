@@ -1,4 +1,4 @@
-require('./some-jsx.scss');
+require('./some-jsx.css');
 var React = require('react');
 
 var SomeJsx = React.createClass({
