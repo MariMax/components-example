@@ -22,6 +22,8 @@
   "dependencies": {
     "autoprefixer-loader": "1.0.0",
     "css-loader": "^0.9.1",
+    "handlebars": "^2.0.0",
+    "handlebars-loader": "^0.1.8",
     "html-loader": "^0.2.3",
     "jsx-loader": "^0.12.2",
     "react": "^0.12.2",

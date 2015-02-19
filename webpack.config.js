@@ -23,7 +23,7 @@ module.exports = {
                     'autoprefixer?browsers=last 2 versions'
                 ]
             },
-            { test: /\.tpl/, loader: 'html-loader' },
+            { test: /\.handlebars$/, loader: "handlebars-loader" },
             //load as data-urls
             { test: /\.png$/, loader: 'url-loader?limit=20000' },
             { test: /\.woff$/, loader: 'url-loader?limit=20000&minetype=application/font-woff' }
