@@ -11,18 +11,29 @@ var template = require('./plain-js.handlebars');
 
      <file name="index.js" webpack="true">
          var PlainJsComponent = require('plain-js/plain-js');
-         var plain = new PlainJsComponent('MyComponent');
-         plain.renderInto(document.getElementById('plainJsContainer'));
+         var plain = new PlainJsComponent(document.getElementById('plainJsContainer'));
     </file>
  </example>
  */
 
-var PlainJsComponent = function (name) {
-    this.name = name;
+var PlainJsComponent = function (domNode) {
+    this.domNode = domNode;
+
+    this.renderInto(domNode);
+
+    this.initListeners();
 };
 
 PlainJsComponent.prototype.renderInto = function (domNode) {
     domNode.innerHTML = template({name: this.name});
+};
+
+PlainJsComponent.prototype.initListeners = function () {
+    var button = this.domNode.querySelector('.plain-js__click-me');
+
+    button.addEventListener('click', function onClick() {
+        button.innerHTML = 'clicked!';
+    });
 };
 
 module.exports = PlainJsComponent;

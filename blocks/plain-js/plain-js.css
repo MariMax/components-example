@@ -1,5 +1,9 @@
 
-.awesome {
+.plain-js {
   color: #282;
   font-size: 24px;
+}
+
+.plain-js__click-me {
+
 }
