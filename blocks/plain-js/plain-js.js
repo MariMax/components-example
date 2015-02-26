@@ -10,8 +10,8 @@ var template = require('./plain-js.handlebars');
      </file>
 
      <file name="index.js" webpack="true">
-         var PlainJsComponent = require('plain-js/plain-js');
-         var plain = new PlainJsComponent(document.getElementById('plainJsContainer'));
+         var Plain = require('plain-js/plain-js');
+         var plain = new Plain(document.getElementById('plainJsContainer'));
     </file>
  </example>
  */
